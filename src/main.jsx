@@ -11,6 +11,7 @@ import AppliedJob from './Pages/AppliedJob.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Blog from './Pages/Blog.jsx';
 import Statistics from './Pages/Statistics.jsx';
+import ErrorPage from './Pages/ErrorPage.jsx';
 
 
 
@@ -35,6 +36,9 @@ const router = createBrowserRouter([
       {
         path:"blog",
         element:<Blog></Blog>
+      }, {
+        path:"*",
+        element:<ErrorPage></ErrorPage>
       }
     ]
   },
