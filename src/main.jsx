@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Blog from './Pages/Blog.jsx';
 import Statistics from './Pages/Statistics.jsx';
 import ErrorPage from './Pages/ErrorPage.jsx';
+import JobDetails from './Components/JobDetails.jsx';
 
 
 
@@ -33,6 +34,11 @@ const router = createBrowserRouter([
       {
         path:"appliedjob",
         element:<AppliedJob></AppliedJob>
+      },
+      {
+        path:"/job/:id",
+        element: <JobDetails></JobDetails> ,
+        loader: () => fetch('./data/jobs.json') 
       },
       {
         path:"blog",
