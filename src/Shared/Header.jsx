@@ -16,6 +16,7 @@ const Header = () => {
             <Nav.Link>  <Link to='stats'> Statistics </Link> </Nav.Link>
             <Nav.Link > <Link to='appliedjob'> Applied Job </Link> </Nav.Link>
             <Nav.Link > <Link to='blog'> Blog </Link> </Nav.Link>
+            
         </Nav></div>
 
         <div>

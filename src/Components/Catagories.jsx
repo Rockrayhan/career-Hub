@@ -8,7 +8,7 @@ const Catagories = () => {
         .then(data => setCatagories(data))
     } ,[] )
 
-    console.log(catagories);
+    // console.log(catagories);
 
     return (
         <div>
